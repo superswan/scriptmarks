@@ -1,0 +1,26 @@
+<!DOCTYPE NETSCAPE-Bookmark-file-1>
+<!-- This is an automatically generated file.
+     It will be read and overwritten.
+     DO NOT EDIT! -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>Bookmarks</TITLE>
+<H1>Bookmarks</H1>
+<DL><p>
+    <DT><H3 ADD_DATE="1667606864" LAST_MODIFIED="1713376542" PERSONAL_TOOLBAR_FOLDER="true">Bookmarks bar</H3>
+    <DL><p>
+        <DT><H3 ADD_DATE="1711164681" LAST_MODIFIED="1713376538">scripts</H3>
+        <DL><p>
+            <DT><A HREF="javascript:(function(){    var imgs = document.querySelectorAll('img');    var bgImgs = document.querySelectorAll('*');    var displayState = imgs[0].style.display === 'none' ?%20%27%27%20:%20%27none%27;%20%20%20%20imgs.forEach(img%20=%3E%20img.style.display%20=%20displayState);%20%20%20%20bgImgs.forEach(el%20=%3E%20{%20%20%20%20%20%20%20%20if%20(el.style.backgroundImage%20!==%20%27none%27)%20{%20%20%20%20%20%20%20%20%20%20%20%20el.setAttribute(%27data-original-bg%27,%20el.style.backgroundImage);%20%20%20%20%20%20%20%20%20%20%20%20el.style.backgroundImage%20=%20displayState%20===%20%27none%27%20?%20%27none%27%20:%20el.getAttribute(%27data-original-bg%27);%20%20%20%20%20%20%20%20}%20%20%20%20});})();" ADD_DATE="1711164681">Toggle Images</A>
+            <DT><A HREF="javascript:(function() { window.open('','_self',''); var script = document.createElement('script'); script.src = 'https://cdn.jsdelivr.net/npm/eruda'; document.body.appendChild(script); script.onload = function() { eruda.init() }; })();" ADD_DATE="1711164773">Show Console</A>
+            <DT><A HREF="javascript:(function() { var styles = document.getElementsByTagName('style'); for (var i = 0; i < styles.length; i++) { styles[i].parentNode.removeChild(styles[i]); } var links = document.getElementsByTagName('link'); for (var j = 0; j < links.length; j++) { if (links[j].rel === 'stylesheet') { links[j].parentNode.removeChild(links[j]); } } })();" ADD_DATE="1711164822">Remove Styles</A>
+            <DT><A HREF="javascript:(function(){  var imgs = document.getElementsByTagName('img');  var imgSrcs = [];  for (var i = 0; i < imgs.length; i++) {    imgSrcs.push(imgs[i].src);  }  var newTab = window.open();  newTab.document.write('<title>Images</title>');  imgSrcs.forEach(function(src) {    newTab.document.write('<img src=&quot;' + src + '&quot; style=&quot;margin:10px; max-width:90%; border:1px solid #ccc;%22%3E%3Cbr%3E');%20%20});})();" ADD_DATE="1711164989">Get Images</A>
+            <DT><A HREF="javascript:(function(){  var links = document.getElementsByTagName('a');  var newTab = window.open();  newTab.document.write('<title>Page Links</title><style>body { font-family: Arial, sans-serif; } a { display: block; margin: 5px 0; }</style>');  for (var i = 0; i < links.length; i++) {    newTab.document.write('<a href=&quot;' + links[i].href + '&quot; target=&quot;_blank&quot;>' + links[i].href + '</a>');  }})();" ADD_DATE="1711165079">Grab Links</A>
+            <DT><A HREF="javascript:(function(){  var links = document.getElementsByTagName('a');  for (var i = 0; i < links.length; i++) {    window.open(links[i].href, '_blank');  }})();" ADD_DATE="1711165258">Open All Links (!)</A>
+            <DT><A HREF="javascript:(function(){  var inputs = document.querySelectorAll('input[type=&quot;password&quot;]');  for (var i = 0; i < inputs.length; i++) {    inputs[i].type = 'text';  }})();" ADD_DATE="1711165351">Show Passwords</A>
+            <DT><A HREF="javascript:(function(){  var comments = [];  var walker = document.createTreeWalker(    document.body,    NodeFilter.SHOW_COMMENT,    null,    false  );  var node;  while(node = walker.nextNode()) {    comments.push(node.nodeValue);  }  alert(comments.join('\n\n'));})();" ADD_DATE="1711165370">Find Comments</A>
+            <DT><A HREF="javascript:(function(){  var vars = [];  for (var name in window) {    if (window.hasOwnProperty(name)) {      vars.push(name);    }  }  alert(vars.join('\n\n'));})();" ADD_DATE="1711165428">List Global Variables</A>
+            <DT><A HREF="javascript:(function(){  var cookieEditor = prompt('Edit Cookies', document.cookie);  if (cookieEditor) {    document.cookie = cookieEditor;  }})();" ADD_DATE="1711165483">Cookie Editor</A>
+            <DT><A HREF="javascript:(function(){  var payload = '&quot;><svg/onload=alert(1)>';  window.location.hash = payload;})();" ADD_DATE="1711165530">DOM XSS Check</A>
+            <DT><A HREF="javascript:(function(){  var csp = document.querySelector('meta[http-equiv=&quot;Content-Security-Policy&quot;]');  if (csp) {    alert(csp.content);  } else {    alert('No Content-Security-Policy set.');  }})();" ADD_DATE="1711165582">CSP </A>
+        </DL>
+</DL><p>
